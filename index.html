@@ -12,8 +12,7 @@
     <!-- Loading Screen -->
     <div class="loading-screen">
         <div class="loading-logo">
-            <div class="logo-circle"></div>
-            <div class="logo-text">PROTODYNA</div>
+            <img src="Proto Dyna.png" alt="ProtoDYNA Logo" class="loading-logo-img">
             <div class="loading-bar">
                 <div class="loading-progress"></div>
             </div>
@@ -23,13 +22,13 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">
-                <div class="logo-icon">PD</div>
+            <a href="#home" class="logo-link">
+                <img src="Proto Dyna.png" alt="ProtoDYNA Logo" class="logo-img">
                 <div class="logo-text">
                     <span class="logo-main">ProtoDYNA</span>
                     <span class="logo-sub">MOBILITY</span>
                 </div>
-            </div>
+            </a>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link"><span>Home</span></a></li>
                 <li><a href="#about" class="nav-link"><span>Innovation</span></a></li>
@@ -49,35 +48,50 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Logo -->
     <section class="hero" id="home">
         <div class="hero-background">
             <div class="particles" id="particles-js"></div>
             <div class="gradient-overlay"></div>
+            <!-- Animated SVG Background (like your reference site) -->
+            <div class="animated-svg-container">
+                <object type="image/svg+xml" data="pd03.svg" class="hero-animated-svg"></object>
+            </div>
         </div>
         <div class="hero-content">
-            <div class="hero-tagline">
-                <span class="tagline-badge">Pioneering Next-Gen Mobility</span>
+            <!-- Large Center Logo -->
+            <div class="hero-logo">
+                <img src="Proto Dyna.png" alt="ProtoDYNA Mobility" class="hero-logo-img">
             </div>
-            <h1 class="hero-title">
-                <span class="title-line">Engineering the Future of</span>
-                <span class="title-highlight">Electric & Autonomous</span>
-                <span class="title-line">Transportation</span>
-            </h1>
-            <p class="hero-description">
-                Where advanced engineering meets artificial intelligence to redefine vehicle dynamics, 
-                ADAS systems, and sustainable mobility solutions.
-            </p>
-            <div class="hero-actions">
-                <a href="#projects" class="btn-primary">
-                    <span>Explore Our Work</span>
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-                <a href="#technology" class="btn-secondary">
-                    <span>Our Technology</span>
-                    <i class="fas fa-microchip"></i>
-                </a>
+            
+            <div class="hero-text-content">
+                <div class="hero-tagline">
+                    <span class="tagline-badge">
+                        <i class="fas fa-bolt"></i>
+                        Pioneering Next-Gen Mobility
+                    </span>
+                </div>
+                
+                <h1 class="hero-title glitch-text" data-text="Innovate. Simulate. Drive.">
+                    Innovate. Simulate. Drive.
+                </h1>
+                
+                <p class="hero-description">
+                    Redefining electric and ADAS / ADS mobility through engineering and AI-powered innovation.
+                </p>
+                
+                <div class="cta-container">
+                    <a href="#about" class="cta-button cta-primary">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Our Story</span>
+                    </a>
+                    <a href="#projects" class="cta-button cta-secondary">
+                        <i class="fas fa-rocket"></i>
+                        <span>Explore Projects</span>
+                    </a>
+                </div>
             </div>
+            
             <div class="scroll-indicator">
                 <div class="mouse">
                     <div class="wheel"></div>
@@ -92,24 +106,32 @@
         <div class="container">
             <div class="stats-grid">
                 <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
                     <div class="stat-number" data-count="15">0</div>
                     <div class="stat-label">Innovation Projects</div>
-                    <div class="stat-bar"></div>
                 </div>
                 <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
                     <div class="stat-number" data-count="100">0</div>
                     <div class="stat-label">Simulation Models</div>
-                    <div class="stat-bar"></div>
                 </div>
                 <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
                     <div class="stat-number" data-count="4">0</div>
                     <div class="stat-label">Core Technologies</div>
-                    <div class="stat-bar"></div>
                 </div>
                 <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
                     <div class="stat-number" data-count="2500">0</div>
                     <div class="stat-label">Development Hours</div>
-                    <div class="stat-bar"></div>
                 </div>
             </div>
         </div>
@@ -119,8 +141,11 @@
     <section class="about-section" id="about">
         <div class="container">
             <div class="section-header">
+                <div class="section-logo">
+                    <img src="Proto Dyna.png" alt="Logo" class="section-logo-img">
+                </div>
                 <h2 class="section-title">
-                    <span class="title-prefix">01</span>
+                    <span class="title-prefix">ABOUT US</span>
                     Driving Innovation Forward
                 </h2>
                 <p class="section-subtitle">
@@ -158,11 +183,21 @@
                     </div>
                 </div>
                 <div class="about-visual">
-                    <div class="visual-card">
-                        <div class="card-layer"></div>
-                        <div class="card-content">
-                            <h4>Engineering Excellence</h4>
-                            <p>Precision, innovation, and performance define our approach to mobility challenges.</p>
+                    <div class="about-card">
+                        <div class="card-header">
+                            <h4>Our Mission</h4>
+                            <div class="card-logo">
+                                <img src="Proto Dyna.png" alt="Logo">
+                            </div>
+                        </div>
+                        <p class="card-text">
+                            To revolutionize the automotive industry through cutting-edge technology, 
+                            innovative engineering, and sustainable mobility solutions that shape the future of transportation.
+                        </p>
+                        <div class="card-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Where passion meets innovation in electric and autonomous mobility.</p>
+                            <i class="fas fa-quote-right"></i>
                         </div>
                     </div>
                 </div>
@@ -175,7 +210,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">
-                    <span class="title-prefix">02</span>
+                    <span class="title-prefix">OUR EXPERTISE</span>
                     Core Technologies
                 </h2>
             </div>
@@ -188,9 +223,9 @@
                         <h3>Vehicle Dynamics</h3>
                         <p>High-fidelity modeling of suspension, steering, and braking systems for optimal vehicle behavior.</p>
                         <ul class="tech-list">
-                            <li>Suspension Kinematics</li>
-                            <li>Tire Modeling</li>
-                            <li>Control Systems</li>
+                            <li><i class="fas fa-check-circle"></i> Suspension Kinematics</li>
+                            <li><i class="fas fa-check-circle"></i> Tire Modeling</li>
+                            <li><i class="fas fa-check-circle"></i> Control Systems</li>
                         </ul>
                     </div>
                 </div>
@@ -202,9 +237,9 @@
                         <h3>ADAS/ADS Development</h3>
                         <p>Sensor fusion, path planning, and decision algorithms for advanced driver assistance and autonomy.</p>
                         <ul class="tech-list">
-                            <li>Computer Vision</li>
-                            <li>Sensor Fusion</li>
-                            <li>Motion Planning</li>
+                            <li><i class="fas fa-check-circle"></i> Computer Vision</li>
+                            <li><i class="fas fa-check-circle"></i> Sensor Fusion</li>
+                            <li><i class="fas fa-check-circle"></i> Motion Planning</li>
                         </ul>
                     </div>
                 </div>
@@ -216,9 +251,9 @@
                         <h3>Electrification</h3>
                         <p>Battery management, motor control, and charging infrastructure solutions for next-gen EVs.</p>
                         <ul class="tech-list">
-                            <li>BMS Design</li>
-                            <li>Motor Control</li>
-                            <li>Energy Management</li>
+                            <li><i class="fas fa-check-circle"></i> BMS Design</li>
+                            <li><i class="fas fa-check-circle"></i> Motor Control</li>
+                            <li><i class="fas fa-check-circle"></i> Energy Management</li>
                         </ul>
                     </div>
                 </div>
@@ -230,9 +265,9 @@
                         <h3>Digital Twins</h3>
                         <p>Virtual representation of physical systems enabling real-time monitoring, simulation, and optimization.</p>
                         <ul class="tech-list">
-                            <li>Real-time Simulation</li>
-                            <li>System Integration</li>
-                            <li>Predictive Analysis</li>
+                            <li><i class="fas fa-check-circle"></i> Real-time Simulation</li>
+                            <li><i class="fas fa-check-circle"></i> System Integration</li>
+                            <li><i class="fas fa-check-circle"></i> Predictive Analysis</li>
                         </ul>
                     </div>
                 </div>
@@ -245,7 +280,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">
-                    <span class="title-prefix">03</span>
+                    <span class="title-prefix">OUR WORK</span>
                     Featured Projects
                 </h2>
             </div>
@@ -253,6 +288,9 @@
                 <div class="project-card">
                     <div class="project-image">
                         <div class="image-overlay"></div>
+                        <div class="project-logo">
+                            <img src="Proto Dyna.png" alt="ProtoDYNA">
+                        </div>
                         <div class="project-tag">Active Development</div>
                     </div>
                     <div class="project-content">
@@ -264,14 +302,17 @@
                             <span>CAD</span>
                         </div>
                         <a href="#" class="project-link">
-                            <span>Case Study</span>
-                            <i class="fas fa-arrow-up-right-from-square"></i>
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
                         <div class="image-overlay"></div>
+                        <div class="project-logo">
+                            <img src="Proto Dyna.png" alt="ProtoDYNA">
+                        </div>
                         <div class="project-tag">Research</div>
                     </div>
                     <div class="project-content">
@@ -283,14 +324,17 @@
                             <span>C++</span>
                         </div>
                         <a href="#" class="project-link">
-                            <span>Case Study</span>
-                            <i class="fas fa-arrow-up-right-from-square"></i>
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">
                         <div class="image-overlay"></div>
+                        <div class="project-logo">
+                            <img src="Proto Dyna.png" alt="ProtoDYNA">
+                        </div>
                         <div class="project-tag">Implementation</div>
                     </div>
                     <div class="project-content">
@@ -302,8 +346,8 @@
                             <span>AWS</span>
                         </div>
                         <a href="#" class="project-link">
-                            <span>Case Study</span>
-                            <i class="fas fa-arrow-up-right-from-square"></i>
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                 </div>
@@ -316,8 +360,8 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">
-                    <span class="title-prefix">04</span>
-                    Engineering Team
+                    <span class="title-prefix">OUR TEAM</span>
+                    Engineering Excellence
                 </h2>
                 <p class="section-subtitle">
                     Passionate innovators driving the future of mobility
@@ -328,6 +372,9 @@
                     <div class="member-image">
                         <div class="image-frame"></div>
                         <img src="1234.jpg" alt="Logesh SELVARAJ">
+                        <div class="member-logo">
+                            <img src="Proto Dyna.png" alt="Logo">
+                        </div>
                     </div>
                     <div class="member-info">
                         <h3>Logesh SELVARAJ</h3>
@@ -343,6 +390,9 @@
                     <div class="member-image">
                         <div class="image-frame"></div>
                         <img src="nara.jpg" alt="Narayan KUMAR">
+                        <div class="member-logo">
+                            <img src="Proto Dyna.png" alt="Logo">
+                        </div>
                     </div>
                     <div class="member-info">
                         <h3>Narayan KUMAR</h3>
@@ -358,6 +408,9 @@
                     <div class="member-image">
                         <div class="image-frame"></div>
                         <img src="a2.jpg" alt="Anirudh KRISHNAN">
+                        <div class="member-logo">
+                            <img src="Proto Dyna.png" alt="Logo">
+                        </div>
                     </div>
                     <div class="member-info">
                         <h3>Anirudh KRISHNAN</h3>
@@ -373,6 +426,9 @@
                     <div class="member-image">
                         <div class="image-frame"></div>
                         <img src="cj04.jpg" alt="Sherwin Joy">
+                        <div class="member-logo">
+                            <img src="Proto Dyna.png" alt="Logo">
+                        </div>
                     </div>
                     <div class="member-info">
                         <h3>Sherwin Joy</h3>
@@ -393,9 +449,12 @@
         <div class="container">
             <div class="contact-grid">
                 <div class="contact-info">
+                    <div class="contact-logo">
+                        <img src="Proto Dyna.png" alt="ProtoDYNA Logo">
+                    </div>
                     <h2 class="section-title">
-                        <span class="title-prefix">05</span>
-                        Connect With Us
+                        <span class="title-prefix">CONNECT</span>
+                        Get In Touch
                     </h2>
                     <p class="contact-description">
                         Ready to collaborate on the future of mobility? Let's discuss how our expertise can accelerate your project.
@@ -432,6 +491,12 @@
                 </div>
                 <div class="contact-form">
                     <form id="contactForm">
+                        <div class="form-header">
+                            <h3>Send us a message</h3>
+                            <div class="form-logo">
+                                <img src="Proto Dyna.png" alt="Logo">
+                            </div>
+                        </div>
                         <div class="form-group">
                             <input type="text" id="name" name="name" required placeholder="Your Name">
                             <label for="name">Name</label>
@@ -469,23 +534,27 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="logo">
-                        <div class="logo-icon">PD</div>
-                        <div class="logo-text">
+                    <div class="footer-logo">
+                        <img src="Proto Dyna.png" alt="ProtoDYNA Logo">
+                        <div class="footer-logo-text">
                             <span class="logo-main">ProtoDYNA</span>
                             <span class="logo-sub">MOBILITY</span>
                         </div>
                     </div>
-                    <p class="footer-tagline">Engineering the future of intelligent transportation</p>
+                    <p class="footer-tagline">
+                        <i class="fas fa-quote-left"></i>
+                        Engineering the future of intelligent transportation
+                        <i class="fas fa-quote-right"></i>
+                    </p>
                 </div>
                 <div class="footer-links">
                     <div class="link-group">
                         <h4>Technology</h4>
                         <ul>
-                            <li><a href="#">Vehicle Dynamics</a></li>
-                            <li><a href="#">Autonomous Systems</a></li>
-                            <li><a href="#">Electrification</a></li>
-                            <li><a href="#">Digital Twins</a></li>
+                            <li><a href="#technology">Vehicle Dynamics</a></li>
+                            <li><a href="#technology">Autonomous Systems</a></li>
+                            <li><a href="#technology">Electrification</a></li>
+                            <li><a href="#technology">Digital Twins</a></li>
                         </ul>
                     </div>
                     <div class="link-group">
@@ -505,12 +574,23 @@
                             <a href="#"><i class="fab fa-github"></i></a>
                             <a href="#"><i class="fab fa-youtube"></i></a>
                         </div>
+                        <div class="footer-cta">
+                            <a href="#contact" class="btn-outline">
+                                <i class="fas fa-handshake"></i>
+                                Partner with us
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2025 ProtoDYNA Mobility. All rights reserved.</p>
-                <p>Innovate. Simulate. Drive.</p>
+                <div class="copyright">
+                    <p>© 2025 ProtoDYNA Mobility. All rights reserved.</p>
+                    <p class="footer-motto">Innovate. Simulate. Drive.</p>
+                </div>
+                <div class="footer-logo-small">
+                    <img src="Proto Dyna.png" alt="Logo">
+                </div>
             </div>
         </div>
     </footer>
